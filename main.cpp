@@ -22,7 +22,15 @@ int main()
         double height;
         cout << "Ширина: ";
         cin >> height;
+<<<<<<< HEAD
 
+=======
+        if (leight <= 0 or height <= 0)
+        {
+          cout << "Неверные данные";
+          break;
+        }
+>>>>>>> def20c30f78cf183457702fe885ec595b9e39c77
         double perim = RectPerim(leight, height);
         double squar = RectSquar(leight, height);
         double diag = RectLgOfDiag(leight, height);
@@ -44,6 +52,33 @@ int main()
         cin >> d;
         cout << "Введите высоту трапеции: ";
         cin >> height;
+<<<<<<< HEAD
+=======
+        //d1=sqrt(d*d + a*b - (a*(d*d - c*c)/(a-b));
+        //d2=sqrt(c*c + a*b - (a*(c*c - d*d)/(a-b));
+        
+          
+        if (a <= 0 or b <= 0 or c <= 0 or d <= 0 or height <= 0)
+        {
+          cout << "Неверные данные";
+          break;
+        }
+        if ((a+b)>(c+d))
+        {
+          cout << "Неверные данные";
+          break;
+        }
+        if (a==b)
+        {
+          cout << "Неверные данные";
+          break;
+        }
+        if ((c+d)<=abs(a-b))
+        {
+          cout << "Неверные данные";
+          break;
+        }
+>>>>>>> def20c30f78cf183457702fe885ec595b9e39c77
         // Вычисления
         double perimeter = TrapPerim(a, b, c, d);
         double area = TrapArea(a, b, height);
@@ -61,7 +96,19 @@ int main()
         cin >> a;
         cout << "Введите внутренний угол искомого сектора (градусная мера угла): ";
         cin >> b;
+<<<<<<< HEAD
 
+=======
+        if (a <= 0)
+        {
+          cout << "Неверные данные";
+          break;
+        }
+        if(b<0) 
+        {
+          a=a*(-1);
+        }
+>>>>>>> def20c30f78cf183457702fe885ec595b9e39c77
         // Вычисления
         double length = CircleLength(a);
         double area = CircleArea(a);
